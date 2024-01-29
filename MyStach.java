@@ -22,5 +22,18 @@ public class MyStach<T> implements UVGStach<T>{
         return null;
     }
 
+    @Override
+    //Devuelve el elemento de la parte superior del Stack
+    public T top(){
+        if(!isEmpty()){
+            return stack.get(stack.size()-1);
+        }
+        return null;
+    }
 
+    @Override
+    //Devuelve true si el Stack esta vacio
+    public boolean isEmpty(){
+        return stack.isEmpty();
+    }
 }
