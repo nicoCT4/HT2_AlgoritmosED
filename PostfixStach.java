@@ -35,12 +35,20 @@ public class PostfixStach{
                         switch (token) {
                             // Realiza la operación correspondiente
                             case "+":
+                                stack.push(b + a);
+                                System.out.println("Suma: " + stack.top());
                                 break;
                             case "-":
+                                stack.push(b - a);
+                                System.out.println("Resta: " + stack.top());
                                 break;
                             case "*":
+                                stack.push(b * a);
+                                System.out.println("Multiplicacion: " + stack.top());
                                 break;
                             case "/":
+                                stack.push(b / a);
+                                System.out.println("Division: " + stack.top());
                                 break;
                         }
                     }
