@@ -19,5 +19,37 @@ public class PostfixStach{
      * @param args Argumentos pasados al programa (no utilizados).
      */
     public static void main(String[] args) {
+        // Crea una nueva pila
+        MyStach<Integer> stack = new MyStach<>();
+        String line;
+        // Lee el archivo línea por línea
+        try (BufferedReader br = new BufferedReader(new FileReader("datos.txt"))) {
+            while ((line = br.readLine()) != null) {
+                // Divide la línea en tokens separados por espacios
+                for (String token : line.split(" ")) {
+                    if (token.matches("\\d+")) { // Si es un número
+                        stack.push(Integer.parseInt(token));
+                    } else { // Si es un operador
+                        int a = stack.pop();
+                        int b = stack.pop();
+                        switch (token) {
+                            // Realiza la operación correspondiente
+                            case "+":
+                                break;
+                            case "-":
+                                break;
+                            case "*":
+                                break;
+                            case "/":
+                                break;
+                        }
+                    }
+                }
+                System.out.println("\nResultado: " + stack.pop() + "\n");
+            }
+        } catch (IOException e) {
+            // Imprime el error en caso de que ocurra
+            System.out.println(e.getMessage());
+        }
     }
 }
