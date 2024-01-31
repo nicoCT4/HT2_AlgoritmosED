@@ -5,8 +5,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 
-public class PostfixStachTest {
-    private MyStach<Integer> stack = new MyStach<>();
+public class PostfixStackTest {
+    private MyStack<Integer> stack = new MyStack<>();
     @Test
     public void testPushandTop() {
         stack.push(1);

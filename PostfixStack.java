@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class PostfixStach{
+public class PostfixStack{
         /**
      * El punto de entrada principal del programa.
      * Lee el archivo "datos.txt" y evalúa las expresiones contenidas en él.
@@ -20,7 +20,7 @@ public class PostfixStach{
      */
     public static void main(String[] args) {
         // Crea una nueva pila
-        MyStach<Integer> stack = new MyStach<>();
+        MyStack<Integer> stack = new MyStack<>();
         String line;
         // Lee el archivo línea por línea
         try (BufferedReader br = new BufferedReader(new FileReader("datos.txt"))) {
