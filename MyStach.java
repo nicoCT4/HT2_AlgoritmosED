@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class MyStach<T> implements UVGStach<T>{
+public class MyStach<T> implements UVGStack<T>{
     private ArrayList<T> stack;
 
     public MyStach(){

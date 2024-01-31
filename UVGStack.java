@@ -1,4 +1,4 @@
-public interface UVGStach <T> {
+public interface UVGStack <T> {
     // Métodos a utilizar para las clases que sirvan como Stack
     public void push(T x); //Inserta un elemento en la parte superior del Stack
     public T pop(); //Elimna y devuelve el elemento de la parte superior del Stack
